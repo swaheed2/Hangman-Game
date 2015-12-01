@@ -1,0 +1,51 @@
+body{
+    background: #011323;
+    color: white;   
+}
+
+.center-row { text-align:center;}
+
+.margin-xs{
+    margin-bottom: 8px;
+}
+
+.margin-xs-left{
+    margin-left: 10px;
+}
+
+
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+
+.linesLetter{
+    
+    font-size: 30px;
+    color: #fff; 
+    font-weight: bold;
+}
+
+#lines{
+    font-weight: bolder; 
+    font-size: 30px;
+    text-align: center !important;
+}
+
+#message{
+    min-height : 260px;
+    max-height : 260px !important;
+    overflow: hidden;
+    
+}
+
+canvas{
+    position : fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}

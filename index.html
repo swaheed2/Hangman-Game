@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="styles/AdminLTE.min.css">
+
+
+        <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+        <!--This is Shahrukh Testing 2-->
+    </head>
+    <body>
+        <div class= "container">
+
+            <h1 class="text-center">Hangman Game</h1>
+            <br><br>
+
+
+
+            <div class="row text-center margin-xs" id="lines">
+
+
+            </div>
+            <br>  
+            <div class="row">
+                <div class="col col-xs-8" id ="allbuttons">
+                    <div class="row text-center margin-xs">
+                        <div class="col-xs-2"><button class="btn btn-primary btn-lg" id='buttonA'>A</button></div>
+                        <div class="col-xs-2"><button class="btn btn-primary btn-lg" id='buttonB'>B</button></div>
+                        <div class="col-xs-2"><button class="btn btn-primary btn-lg"  id='buttonC'>C</button></div>
+                        <div class="col-xs-2"><button class="btn btn-primary btn-lg"  id='buttonD'>D</button></div>
+                        <div class="col-xs-2"><button class="btn btn-primary btn-lg"  id='buttonE'>E</button></div>
+                        <div class="col-xs-2"><button class="btn btn-primary btn-lg"  id='buttonF'>F</button></div>
+                    </div> 
+                    <div class="row text-center margin-xs">
+                        <div class="col-xs-2"><button class="btn btn-primary btn-lg"  id='buttonG'>G</button></div>
+                        <div class="col-xs-2"><button class="btn btn-primary btn-lg"  id='buttonH'>H</button></div>
+                        <div class="col-xs-2"><button class="btn btn-primary btn-lg"  id='buttonI'>I&nbsp;</button></div>
+                        <div class="col-xs-2"><button class="btn btn-primary btn-lg"  id='buttonJ'>J</button></div> 
+                        <div class="col-xs-2"><button class="btn btn-primary btn-lg"  id='buttonK'>K</button></div>
+                        <div class="col-xs-2"><button class="btn btn-primary btn-lg"  id='buttonL'>L</button></div>
+                    </div> 
+                    <div class="row text-center margin-xs">
+                        <div class="col-xs-2"><button class="btn btn-primary btn-lg"  id='buttonM'>M</button></div>
+                        <div class="col-xs-2"><button class="btn btn-primary btn-lg"  id='buttonN'>N</button></div>
+                        <div class="col-xs-2"><button class="btn btn-primary btn-lg"  id='buttonO'>O</button></div>
+                        <div class="col-xs-2"><button class="btn btn-primary btn-lg"  id='buttonP'>P</button></div>
+                        <div class="col-xs-2"><button class="btn btn-primary btn-lg"  id='buttonQ'>Q</button></div>
+                        <div class="col-xs-2"><button class="btn btn-primary btn-lg"  id='buttonR'>R</button></div>
+                    </div> 
+                    <div class="row text-center margin-xs">
+                        <div class="col-xs-2"><button class="btn btn-primary btn-lg"  id='buttonS'>S</button></div>
+                        <div class="col-xs-2"><button class="btn btn-primary btn-lg"  id='buttonT'>T</button></div>
+                        <div class="col-xs-2"><button class="btn btn-primary btn-lg"  id='buttonU'>U</button></div>
+                        <div class="col-xs-2"><button class="btn btn-primary btn-lg"  id='buttonV'>V</button></div>
+                        <div class="col-xs-2"><button class="btn btn-primary btn-lg"  id='buttonW'>W</button></div>
+                        <div class="col-xs-2"><button class="btn btn-primary btn-lg"  id='buttonX'>X</button></div>
+                    </div> 
+                    <div class="row text-center margin-xs">
+                        <div class="col-xs-6"><button class="btn btn-primary btn-block btn-lg" id='buttonY'>Y</button></div>
+                        <div class="col-xs-6"><button class="btn btn-primary btn-block btn-lg" id='buttonZ'>Z</button></div>
+                    </div>
+
+
+
+                </div>
+                <div class="col col-xs-4">
+                    <div class="row text-center margin-xs-left callout callout-danger " style = "padding: 0">
+
+                        <div id="message">
+
+                        </div>
+
+
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="row" >
+                    <div class="col-md-8 col-xs-7" id = "winMessage"></div>
+                    <div class="col-md-4 col-xs-5" style="height:99px">
+                        <button  onclick="playAgain()" style="height:99px"class="btn btn-info btn-lg btn-block" >Play Again</button>
+                    </div>
+
+
+
+
+                </div>
+
+
+            </div>
+            <script src="js/fireworks.js"></script>   
+            <script src="js/app.js"></script>    
+            </body>
+        </html>
