@@ -1,39 +1,41 @@
 'use strict';
 
-var words = [
 
-    "pakstan", //8
-    "nda",  //5
-    "amerca",  // 7
-    "australia",  //9
-    "ethiopi",
-    "newyork",
-    "newjersey"
 
-];
-
-var randomWord = getRandomInt(0, words.length-1).toString();
+var randomWord;
 var messageBox = $("#message");
 
-var choosenWord = words[randomWord];
-var linesLeft = words[randomWord].length;
+var choosenWord;
+var linesLeft ;
 var indexes = [];
-indexes.length= choosenWord.length;
+/*indexes.length= choosenWord.length;*/
 var counter = 0;
 console.log(randomWord);
 var turns = 7;
 
-// ----------
-
-
-
-
-//-----------
-
 
 document.addEventListener("keypress",getKeyboardInput, false);
+getFile();
+printLines(choosenWord);
+ 
 
-printLines(words[randomWord]);
+//-----------------------------------
+// functions 
+//
+//-----------------------------------
+
+function getFile(){
+    var file = "dictionary/sports-words.txt";
+    $.get(file,function(txt){
+        var lines = txt.responseText.split("\n");
+        randomIndex = getRandomInt(0, lines.length-1)
+        choosenWord  = lines[randomIndex].trim();
+        linesLeft = lines[randomIndex].length;
+        console.log("randomIndex: " + randomIndex);
+        console.log("chosenWord: " + choosenWord);
+        
+    }); 
+}
 
 function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -90,19 +92,11 @@ $('.btn-primary').click(function(){
 
             if(turns == 0){
 
-              buttonsDisable();
-                /*  var allbuttons = $("#allbuttons").children("button");
-            console.log(allbuttons);
-            for( i=0; i< allbuttons.length; i++ )
-            {
-                childDivs[i].attr
-            }
-            allbuttons.each(function(){
-                console.log("disabled"); 
-                $(this).attr("disabled","disabled");
-
-            })*/
-                //showFireworks();
+                buttonsDisable(); 
+                var x = $('#winMessage'); 
+                $('#winMessage').addClass('callout callout-danger');
+                $('#winMessage').addClass('text-center');
+                $('#winMessage').html("<h1>You Lost!</h1>");
 
             }
             console.log("FIREEeeee");
@@ -112,14 +106,14 @@ $('.btn-primary').click(function(){
             if (win()){
                 console.log('i am the winner');
                 showFireworks();
-                var x = $('#winMessage');
-                //var z= $('#winMessage').addClass('alert alert-success');
+                var x = $('#winMessage'); 
                 $('#winMessage').addClass('callout callout-success');
-                 $('#winMessage').addClass('text-center');
+                $('#winMessage').addClass('text-center');
                 $('#winMessage').addClass('callout callout-success').html("<h1>You have won</h1>");
-            
+
                 //css("font-size: 300%");
                 buttonsDisable();
+
 
             }
 
@@ -139,7 +133,7 @@ $('.btn-primary').click(function(){
 function getKeyboardInput(event){
     var input = event.which || event.keyCode;
     console.log("input"); 
-  
+
     var id = 'button' + (String.fromCharCode(input)).toUpperCase();  //buttonA or buttonB ...
     console.log(id);
     var button = document.getElementById(id.toString());
@@ -201,6 +195,7 @@ function playAgain(){
 }
 
 function buttonsDisable(){
+    $('#playAgainBtn').show();
     var allbuttons = document.getElementById('allbuttons').getElementsByTagName('button');
     for( i=0; i< allbuttons.length; i++ )
     {   
