@@ -28,6 +28,7 @@ function getFile(){
     var file = "dictionary/sports-words.txt";
     $.get(file,function(txt){
         var lines = txt.responseText.split("\n");
+        console.log("lines: " JSON.stringify(lines, null, 2));
         randomIndex = getRandomInt(0, lines.length-1)
         choosenWord  = lines[randomIndex].trim();
         linesLeft = lines[randomIndex].length;
