@@ -78,7 +78,7 @@ $('.btn-primary').click(function(){
 
         for(var i=0; i<choosenWord.length;i++)
         {
-            if(words[randomWord].charAt(i) == buttonValue)
+            if(choosenWord.charAt(i) == buttonValue)
             {    
                 console.log(choosenWord==buttonValue);
                 indexes[i]=true;
