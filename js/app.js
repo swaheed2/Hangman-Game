@@ -16,7 +16,7 @@ var turns = 7;
 
 document.addEventListener("keypress",getKeyboardInput, false);
 getFile();
-printLines(choosenWord);
+//printLines(choosenWord);
  
 
 //-----------------------------------
