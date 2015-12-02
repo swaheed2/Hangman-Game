@@ -10,8 +10,7 @@ var choosenWord;
 var linesLeft ;
 var indexes = [];
 /*indexes.length= choosenWord.length;*/
-var counter = 0;
-console.log(randomWord);
+var counter = 0; 
 var turns = 7;
 
 
