@@ -3,6 +3,7 @@
 
 
 var randomWord;
+var randomIndex;
 var messageBox = $("#message");
 
 var choosenWord;
