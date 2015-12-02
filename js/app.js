@@ -27,7 +27,7 @@ getFile();
 function getFile(){
     var file = "http://swaheed2.github.io/Hangman-Game/dictionary/sports-words.txt";
     $.get(file,function(txt){
-        var lines = txt.responseText.split("\n");
+        var lines = txt.split("\n");
         console.log("lines: " + JSON.stringify(lines, null, 2));
         randomIndex = getRandomInt(0, lines.length-1)
         choosenWord  = lines[randomIndex].trim();
