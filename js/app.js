@@ -16,8 +16,8 @@ var turns = 7;
 
 document.addEventListener("keypress",getKeyboardInput, false);
 getFile();
-//printLines(choosenWord);
- 
+
+
 
 //-----------------------------------
 // functions 
@@ -34,7 +34,12 @@ function getFile(){
         linesLeft = lines[randomIndex].length;
         console.log("randomIndex: " + randomIndex);
         console.log("chosenWord: " + choosenWord);
-        
+        printLines(choosenWord);
+        for(var i=0; i<choosenWord.length;i++)
+        {
+            indexes[i]=false;
+        }
+
     }); 
 }
 
@@ -59,10 +64,7 @@ function printLines(word){
 
 }
 
-for(var i=0; i<choosenWord.length;i++)
-{
-    indexes[i]=false;
-}
+
 
 
 $('.btn-primary').click(function(){
