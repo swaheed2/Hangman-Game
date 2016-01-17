@@ -1,1 +1,69 @@
-table tennis yo
+Asylum
+Athlete
+Backboard
+Backhand
+Ball
+Base
+Baseball
+Basketball
+Batter
+Bishop
+Card game
+Catch
+Catcher
+Centre
+Chess
+Court
+Cricket
+Crossbar
+Diamond
+Elephant
+Football
+Forward
+Goal
+Goalkeeper
+Goalpost
+Guard
+Head
+Hockey
+Infield
+Javelin throw
+Jockey
+Joker
+King
+Linesman
+Lob
+Loser
+Miss
+Mound
+Net
+Olympics
+Pass
+Penalty Area
+Penalty Spot
+Pitch
+Pitcher
+Queen
+Racket
+Referee
+Rook
+Runner
+Running
+Score
+Serve
+Service Line
+Shoe
+Shoot
+Snooker
+Soccer
+Sport-Shoe
+Table-tennis
+Tackle
+Tennis
+Throw
+Throw-ball
+Throw-in
+Tramlines
+Umpire
+Volleyball
+Winner

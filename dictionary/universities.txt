@@ -1,0 +1,211 @@
+Name
+Pomona College
+Williams College
+Stanford University
+Princeton University
+Yale University
+Harvard University
+Swarthmore College
+Brown University
+Amherst College
+Massachusetts Institute of Technology
+United States Military Academy
+University of Pennsylvania
+University of Notre Dame
+Dartmouth College
+Columbia University
+Northwestern University
+Wesleyan University
+Claremont McKenna College
+Haverford College
+University of Chicago
+Bowdoin College
+Duke University
+Georgetown University
+Tufts University
+Cornell University
+Wellesley College
+United States Naval Academy
+Vassar College
+Washington and Lee University
+Carleton College
+Davidson College
+Rice University
+California Institute of Technology
+Middlebury College
+University of California, Berkeley
+University of Virginia
+Boston College
+United States Air Force Academy
+College of William & Mary
+Colgate University
+University of Michigan, Ann Arbor
+Barnard College
+Bucknell University
+Colby College
+University of California, Los Angeles
+Oberlin College
+Vanderbilt University
+Kenyon College
+University of North Carolina, Chapel Hill
+Whitman College
+Hamilton College
+Reed College
+Lafayette College
+Smith College
+College of the Holy Cross
+Carnegie Mellon University
+Harvey Mudd College
+Franklin and Marshall College
+Wake Forest University
+University of Rochester
+Colorado College
+Johns Hopkins University
+Washington University in St. Louis
+Bryn Mawr College
+Grinnell College
+Union College
+Macalester College
+University of Illinois, Urbana-Champaign
+University of Wisconsin, Madison
+Bates College
+University of Southern California
+Villanova University
+Cooper Union
+Lehigh University
+Brandeis University
+University of Washington
+New York University
+DePauw University
+Emory University
+Scripps College
+Trinity College
+University of Texas, Austin
+University of Florida
+Sewanee—University of the South
+Santa Clara University
+Wheaton College
+Dickinson College
+Skidmore College
+Centre College
+Georgia Institute of Technology
+Boston University
+Connecticut College
+University of Maryland, College Park
+Occidental College
+Mount Holyoke College
+Denison University
+Wofford College
+Rhodes College
+University of Richmond
+Trinity University
+United States Coast Guard Academy
+University of Georgia
+University of California, Santa Barbara
+Brigham Young University
+Kalamazoo College
+Saint Olaf College
+George Washington University
+Southern Methodist University
+Pitzer College
+Furman University
+Gettysburg College
+Indiana University, Bloomington
+Case Western Reserve University
+University of Colorado, Boulder
+Saint John's College (MD)
+Hampshire College
+Earlham College
+Sarah Lawrence College
+Bennington College
+Hobart and William Smith Colleges
+University of California, Davis
+Virginia Tech
+University of California, San Diego
+College of the Atlantic
+Bard College
+Rensselaer Polytechnic Institute
+University of Miami
+Pepperdine University
+Lawrence University
+University of Minnesota, Twin Cities
+Virginia Military Institute
+Providence College
+Saint Lawrence University
+Tulane University
+American University
+Purdue University, West Lafayette
+Hendrix College
+Willamette University
+Colorado School of Mines
+College of Wooster
+Syracuse University
+University of Delaware
+University of Denver
+Muhlenberg College
+Drake University
+Rutgers University, New Brunswick
+University of California, Irvine
+Lewis & Clark College
+Loyola Marymount University
+Texas A&M University, College Station
+Worcester Polytechnic Institute
+Pennsylvania State University, University Park
+Fordham University
+SUNY, Binghamton (Binghamton University)
+Ohio State University, Columbus
+University of Vermont
+Marquette University
+Beloit College
+Hope College
+Elon University
+Loyola University Maryland
+University of Connecticut
+Clark University
+California Polytechnic State University, San Luis Obispo
+Knox College
+University of Redlands
+Miami University, Oxford
+Wabash College
+University of Puget Sound
+Michigan State University
+Wheaton College
+Clemson University
+University of Tulsa
+University of Portland
+University of California, Santa Cruz
+Westmont College
+CUNY, City College
+Creighton University
+Juniata College
+North Carolina State University, Raleigh
+Fairfield University
+College of New Jersey
+Calvin College
+Gustavus Adolphus College
+James Madison University
+Hillsdale College
+Gonzaga University
+Emerson College
+Bentley University
+Saint Michael's College
+Louisiana State University
+Saint John's University (MN)
+University of Utah
+Southwestern University
+College of Idaho
+Transylvania University
+Baylor University
+Manhattan College
+University of Iowa
+University of Arizona
+University of San Diego
+Saint Mary's College of Maryland
+Ursinus College
+Clarkson University
+Hampden-Sydney College
+Whitworth University
+University of Massachusetts, Amherst
+Saint Louis University
+Yeshiva University
+Texas Christian University
