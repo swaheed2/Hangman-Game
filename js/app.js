@@ -25,9 +25,7 @@ getFile();
 //-----------------------------------
 
 function getFile(){
-
-    var dir = "http://swaheed2.github.io/Hangman-Game/dictionary";
-    var fileextension = ".txt";
+  
     var filenames = ["languages.txt","periodic-table.txt","planets.txt","sports-words.txt","universities.txt"]; 
     var category = filenames[getRandomInt(0, filenames.length-1)];
     var file = "http://swaheed2.github.io/Hangman-Game/dictionary/" + category;
