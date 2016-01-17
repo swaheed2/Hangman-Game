@@ -28,38 +28,27 @@ function getFile(){
 
     var dir = "http://swaheed2.github.io/Hangman-Game/dictionary";
     var fileextension = ".txt";
-    var filenames = []; 
-    $.ajax({ 
-        url: dir,
-        success: function (data) {
-            //List all .png file names in the page
-            $(data).find("a:contains(" + fileextension + ")").each(function () {
-                var filename = this.href.replace(window.location.host, "").replace("http://", "").replace("/dictionary/","");
-                filenames.push(filename);
-                console.log("filename: " + filename);
-            });
-            var category = filenames[getRandomInt(0, filenames.length-1)];
-            var file = "http://swaheed2.github.io/Hangman-Game/dictionary/" + category;
-            
-            $('#category').append(category.replace(".txt",""));
-            
-            console.log("choose file: " + file);
-            $.get(file,function(txt){
-                var lines = txt.split("\n");
-                //console.log("lines: " + JSON.stringify(lines, null, 2));
-                randomIndex = getRandomInt(0, lines.length-1)
-                choosenWord  = lines[randomIndex].trim();
-                linesLeft = lines[randomIndex].length;
-                console.log("randomIndex: " + randomIndex);
-                console.log("chosenWord: " + choosenWord);
-                printLines(choosenWord);
-                for(var i=0; i<choosenWord.length;i++)
-                {
-                    indexes[i]=false;
-                }
+    var filenames = ["languages.txt","periodic-table.txt","planets.txt","sports-words.txt","universities.txt"]; 
+    var category = filenames[getRandomInt(0, filenames.length-1)];
+    var file = "http://swaheed2.github.io/Hangman-Game/dictionary/" + category;
 
-            }); 
+    $('#category').append(category.replace(".txt",""));
+
+    console.log("choose file: " + file);
+    $.get(file,function(txt){
+        var lines = txt.split("\n");
+        //console.log("lines: " + JSON.stringify(lines, null, 2));
+        randomIndex = getRandomInt(0, lines.length-1)
+        choosenWord  = lines[randomIndex].trim();
+        linesLeft = lines[randomIndex].length;
+        console.log("randomIndex: " + randomIndex);
+        console.log("chosenWord: " + choosenWord);
+        printLines(choosenWord);
+        for(var i=0; i<choosenWord.length;i++)
+        {
+            indexes[i]=false;
         }
+
     }); 
 }
 
