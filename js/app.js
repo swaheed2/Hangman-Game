@@ -83,7 +83,7 @@ $('.btn-primary').click(function(){
                 console.log(choosenWord==buttonValue);
                 indexes[i]=true;
                 linesLeft--;
-                found=true;
+                found=true; 
             }
         }  
 
@@ -91,7 +91,7 @@ $('.btn-primary').click(function(){
         {
             turns--;
             console.log("Turns left "+turns);
-            messageBox.html("<img class='img-responsive' style='height: 220px; width: 100% !importanat;' src='img/turnsLeft" +(turns) + ".png'> </img>");
+            messageBox.html("<img class='img-responsive' style='height: 220px; width: 100% !important;' src='img/turnsLeft" +(turns) + ".png'> </img>");
 
             if(turns == 0){
 
@@ -100,9 +100,9 @@ $('.btn-primary').click(function(){
                 $('#winMessage').addClass('callout callout-danger');
                 $('#winMessage').addClass('text-center');
                 $('#winMessage').html("<h1>You Lost!</h1>");
-
+                $('#word-reveal').append("<span style='text-decoration:underline'>" + choosenWord + "</span>").show(); 
             }
-            console.log("FIREEeeee");
+            console.log("found");
 
         }
         else{
@@ -200,7 +200,7 @@ function playAgain(){
 function buttonsDisable(){
     $('#playAgainBtn').show();
     var allbuttons = document.getElementById('allbuttons').getElementsByTagName('button');
-    for( i=0; i< allbuttons.length; i++ )
+    for(var i=0; i< allbuttons.length; i++ )
     {   
         var child = allbuttons[i];
         console.log(child.innerHTML);
