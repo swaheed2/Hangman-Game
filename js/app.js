@@ -77,9 +77,15 @@ $('.btn-primary').click(function(){
         //console.log("I am here..!"+turns); 
 
         for(var i=0; i<choosenWord.length;i++)
-        {
+        { 
             if(choosenWord.charAt(i) == buttonValue)
             {    
+                console.log(choosenWord==buttonValue);
+                indexes[i]=true;
+                linesLeft--;
+                found=true; 
+            }
+            else if(choosenWord.charAt(i) == ' ' && buttonValue == 'space'){
                 console.log(choosenWord==buttonValue);
                 indexes[i]=true;
                 linesLeft--;
