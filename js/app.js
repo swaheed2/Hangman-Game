@@ -38,8 +38,11 @@ function getFile(){
                 filenames.push(filename);
                 console.log("filename: " + filename);
             });
-
-            var file = "http://swaheed2.github.io/Hangman-Game/dictionary/" + filenames[getRandomInt(0, filenames.length-1)];
+            var category = filenames[getRandomInt(0, filenames.length-1)];
+            var file = "http://swaheed2.github.io/Hangman-Game/dictionary/" + category;
+            
+            $('#category').append(category.replace(".txt",""));
+            
             console.log("choose file: " + file);
             $.get(file,function(txt){
                 var lines = txt.split("\n");
@@ -95,7 +98,7 @@ $('.btn-primary').click(function(){
 
         for(var i=0; i<choosenWord.length;i++)
         { 
-            if(choosenWord.charAt(i) == buttonValue)
+            if(choosenWord.charAt(i).toLowerCase() == buttonValue)
             {    
                 console.log(choosenWord==buttonValue);
                 indexes[i]=true;
