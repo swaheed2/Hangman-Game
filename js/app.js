@@ -26,7 +26,7 @@ getFile();
 
 function getFile(){
 
-    var dir = "dictionary";
+    var dir = "http://swaheed2.github.io/Hangman-Game/dictionary";
     var fileextension = ".txt";
     var filenames = []; 
     $.ajax({ 
